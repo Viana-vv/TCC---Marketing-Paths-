@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area dos Criadores</title>
+    <link rel="stylesheet" href="../CSS/administracao.css">
+    <link rel="icon" href="../img/icone.png">
+</head>
+
+<body>
+    <form id="formlogin" method="post" action="../phpFuncions/">
+        <header><img src="../img/icone-inteiro.png"></header>
+        <div class="Caixa">
+            <h1>Enviar video</h1>
+            <!--Letra gerada pelo site https://fancy-generator.com/pt-->
+            <div class="dentro">
+                <ul>
+                    <li>
+                        <p> <b>Video: </b></p>
+                        <input type="file" name="video" id="video" alt="Area para colocar video:">
+                    </li>
+                    <li>
+                        <p><b>Categoria: </b></p>
+                        <select name="categoria" id="categoria">
+                            <option value="estrategia-marketing">Estratégia de marketing</option>
+                            <option value="comunicacao-conteudo">Comunicação e conteúdo</option>
+                            <option value="empreendedorismo-negocios">Empreendedorismo e negócios</option>
+                            <option value="etica-legislacao">Ética e legislação</option>
+                            <option value="desenvolvimento-pessoal">Desenvolvimento pessoal</option>
+                            <option value="analise-metricas">Análise de métricas</option>
+                            <option value="tendencias-inovacao">Tendências e inovação</option>
+                            <option value="experiencia-compra">Experiência de compra</option>
+                            <option value="posicionamento-diferenciacao">Posicionamento e diferenciação</option>
+                            <option value="produto-oferta">Produto e oferta</option>
+                            <option value="psicologia-consumo">Psicologia do consumo</option>
+                            <option value="marketing-multicanal">Marketing multicanal</option>
+                            <option value="planejamento-execucao">Planejamento e execução</option>
+                        </select>
+                    </li>
+                          <li>
+                        <p> <b>Titulo: </b></p>
+                        <input type="text" name="titulo" id="titulo" alt="Area para colocar o titulo do video:">
+                    </li>
+                        <li>
+                        <p> <b>Descrição: </b></p>
+                        <input type="text" name="titulo" id="titulo" alt="Area para colocar o titulo do video:">
+                    </li>
+                    <li>
+                        <p>Lembre-se ao clicar será carregadas as aulas diretamente aos alunos</p>
+                    </li>
+                </ul>
+            </div>
+<button>Enviar</button>
+        </div>
+    </form>
+</body>
+
+</html>

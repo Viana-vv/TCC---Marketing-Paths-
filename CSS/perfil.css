@@ -1,0 +1,149 @@
+ .caixa{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100vw;
+        height: 100vh;
+    background-color: rgb(255, 255, 255);
+    overflow: scroll;
+    }
+    .caixa1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+    background-color: rgb(0, 0, 0);
+    }
+    .caixa2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+    background-color: rgb(0, 0, 0);
+    }
+    *{
+        padding-left: 0;
+    }
+    ul li{
+        height: auto;
+        width: 35vw;
+        list-style: none;
+        color: antiquewhite;
+        margin-top: 20px;
+    font-size: larger;
+    }
+ 
+ul li p{
+    font-size: large;
+}
+
+    ul li button{
+        margin-left: 9.9vw;
+        width: 15vw;
+        font-size: larger;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caixa2 img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+     display: flex;
+    }
+   
+    
+ ul li select{
+       width: 300px;
+    height: 50px;
+ font-size: medium;
+    border-radius: 20px;
+   } 
+   ul li select:hover{
+    background-color: #dce2b3;
+    color: black;
+    border-color: black;
+    border-end-end-radius:20px ;
+    font-size: large;
+   }
+ 
+@media (max-width:900px){
+.caixa{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100vw;
+        height: 100vh;
+    background-color: rgb(0, 0, 0);
+    overflow: scroll;
+    }
+    .caixa1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100vw;
+        height: auto;
+    background-color: rgb(0, 0, 0);
+    }
+    .caixa2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+    background-color: rgb(0, 0, 0);
+ 
+    }
+    
+.imagemusuario{
+     width: 150px;
+        height: 150px;
+        border-radius: 50%;
+     display: flex;
+       justify-content: center;
+        align-items: center;
+        margin-right: 10vw;
+}
+    *{
+        padding-left: 0;
+    }
+    ul li{
+        height: auto;
+        width: 80vw;
+        list-style: none;
+        color: antiquewhite;
+        margin-top: 20px;
+    
+    }
+ 
+    ul li button{
+        margin-left: 25vw;
+        width: 30vw;
+        font-size: larger;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caixa2 img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+     display: flex;
+    }
+
+ 
+}
+.imagemusuario{
+     width: 300px;
+        height: 300px;
+        border-radius: 50%;
+     display: flex;
+       justify-content: center;
+        align-items: center;
+        margin-left: 8.5vw;
+}

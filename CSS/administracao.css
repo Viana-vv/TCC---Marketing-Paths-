@@ -1,0 +1,164 @@
+body{
+   background-color: #000000;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    height: 16vh;
+    margin-bottom: auto;
+}
+img {
+    height: auto;
+    width: auto;
+   margin-bottom: 10px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+ display: flex;
+ flex-direction: column;
+   background-color: #000000;
+   width: 900px;
+ height: 500px;
+ border-radius: 30px;
+}
+
+
+.Caixa{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    border-color: #bfb3e2;
+    border:  solid 3px;
+    color: #c8b3e2;
+    width: 700px;
+    height: 600px;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-decoration: none;
+border-radius: 30px;
+}
+.Caixa .dentro{
+
+    display: flex;
+    width: 400px;
+    height: auto;
+} 
+.Caixa .dentro ul{
+    display: flex;
+    list-style: none;
+ flex-direction: column;
+}
+
+select{
+    margin-top: 20px;
+    font-size: large;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+color: #000000;
+}
+select:hover{
+   
+    color: rgb(0, 0, 0);
+     border-end-end-radius: 20px;
+ 
+}
+
+
+button{
+    margin-top: 10px;
+  margin-bottom: 5px;
+    width: 350px;
+    height: 50px;
+ font-size: large;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #4e3f91;
+    color: #ffffff;
+}
+
+button:hover{
+    background-color: #bcb3e2;
+    color: #2c2341;
+}
+
+ul li{
+    margin-top: 20px;
+}
+
+p b {
+font-size: x-large;
+}
+input{
+        width: 400px;
+        height: auto;
+        border-radius: 30px;
+        font-size: medium;
+        margin-bottom: 10px;
+}
+
+@media (max-width:600px){
+    .container{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+ 
+     .Caixa{
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    }
+    .dentro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        flex-direction: column;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    border-radius: 50%;
+    }
+    button{
+        width: 100px;
+        height: 50px;
+     font-size: medium;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    input{
+    font-size: medium;
+    width: 299px;
+    height: 40px;
+    border-radius: 8px;
+
+}
+input:hover{
+    background-color: #dce2b3;
+    color: rgb(255, 255, 255);
+        border-radius: 5px;
+border-end-end-radius: 20px;
+}
+
+p b {
+    font-size: x-large;
+    }
+}
+
+

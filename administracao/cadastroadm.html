@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Markzen</title>
+    <link rel="icon" href="../img/icone.png">
+    <link rel="stylesheet" href="../CSS/cadastro.css">
+</head>
+
+<body>
+<form action="../phpFuncions/cadastroadm.php" method="post">
+      <header><img src="../img/icone-inteiro.png"></header>   
+       <div class="container">
+         <p>Digite seu email</p>
+        <input name = "email" type="email" alt="local para digitar o email">
+         <p>Crie uma senha</p>
+        <input name="senha" type="text" alt="Local para digitar a senha ">
+      <p>Sua senha deve conter números e letras</p>
+   <button  id="cadastroadm" alt = "Botão para fazer cadastro" >Cadastrar</button>
+    </div>
+       </form>
+    <script>
+document.getElementById("cadastroadm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+const email = document.getElementById("email").value;
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!emailRegex.test(email)){
+    alert("E-mail inválido! por favor insira um e-mail valido");
+    return;
+}
+
+this.submit();
+});
+</script>
+</body>
+
+</html>
