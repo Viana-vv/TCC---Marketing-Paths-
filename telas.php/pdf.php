@@ -25,7 +25,7 @@ $uso = $stmt->get_result();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> PDF - Marketing paths </title>
-  <link rel="stylesheet" href="../CSS/home.css">
+  <link rel="stylesheet" href="../CSS/pdf.css">
   <link rel="icon" href="../img/icone.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -120,10 +120,10 @@ value="<?php echo isset($_GET['pesquisar']) ? htmlspecialchars($_GET['  $row[tit
                 
             <li><a href="perfil.php"><i class="bi bi-person-circle"></i> Meu Perfil</a></li>
             <li><a href="../telas/duvidas.html"> <i class="bi bi-person-raised-hand"></i> Duvidas??</a></li>
-            <li><a href="apresentação.html"> <i class="bi bi-people-fill"></i> Sobre nós</a></li>
-            <li><a href="Suporte.html"> <i class="bi bi-chat-left-dots"></i> Suporte</a></li>
-            <li><a href="" style="font-size: x-small;"> <i class="bi bi-book-half"></i> Termos de politica de privacidade</a></li>
-         </ul>
+           <li><a href="../telas/apresentacao.html"> <i class="bi bi-people-fill"></i> Sobre nós</a></li>
+        
+            <li><a href="https://wa.me/5511945931935"> <i class="bi bi-chat-left-dots"></i> Suporte</a></li>
+           </ul>
         </div>
     </label>
     </div>
@@ -173,7 +173,7 @@ $pdfs = glob($pasta . "*.pdf");
 if (empty($pdfs)) {
     echo "<p style='color:white;'>Nenhum PDF encontrado.</p>";
 } else {
-    echo "<div style='display:flex; flex-wrap:wrap; gap:20px; margin-top:20px;'>";
+ echo "<div class='pdf-container'>";
 
     foreach ($pdfs as $pdf) {
         $nome = basename($pdf);

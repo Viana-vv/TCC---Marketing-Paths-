@@ -13,10 +13,5 @@ if ($conn->connect_error) {
     die("Erro na conexão: " . $conn->connect_error);
 }
 
-// Configurações adicionais
-date_default_timezone_set('America/Sao_Paulo'); // fuso horário
-mysqli_set_charset($conn, "utf8mb4");           // charset para acentos
-error_reporting(0);                             // desliga mensagens de erro
-ini_set('display_errors', 0);
 
 ?>

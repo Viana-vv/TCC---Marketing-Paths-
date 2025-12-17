@@ -27,27 +27,7 @@ $uso = $stmt->get_result();
   <link rel="stylesheet" href="../CSS/estiloChat.css">
   <link rel="icon" href="../img/icone.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <style>
-    .resposta {
-      display: flex;
-      align-items: center;
-      margin-left: 60px;
-      margin-top: 5px;
-      padding: 8px;
-      border-left: 2px solid #ccc;
-    }
-    .resposta .foto { margin-right: 8px; }
-    .resposta .nome { font-weight: bold; color: white; margin-right: 10px; }
-    .resposta p { margin: 0; color: #f0f0f0; }
-  button{
-  background-color: #8d1bffff;
-  color: #ffffffff;
-width: 80px;
-height: 30px;
-border-radius: 20px;
-
-}
-  </style>
+ 
 </head>
 <body>
  <div class="navBar">
@@ -97,9 +77,10 @@ border-radius: 20px;
          ?>
          <li><a href="perfil.php"><i class="bi bi-person-circle"></i> Meu Perfil</a></li>
          <li><a href="../telas/duvidas.html"><i class="bi bi-person-raised-hand"></i> Duvidas??</a></li>
-         <li><a href="apresentação.html"><i class="bi bi-people-fill"></i> Sobre nós</a></li>
-         <li><a href="Suporte.html"><i class="bi bi-chat-left-dots"></i> Suporte</a></li>
-         <li><a href=""><i class="bi bi-book-half"></i> Termos de politica de privacidade</a></li>
+         <li><a href="../telas/apresentacao.html"> <i class="bi bi-people-fill"></i> Sobre nós</a></li>
+        
+         <li><a href="https://wa.me/5511945931935"><i class="bi bi-chat-left-dots"></i> Suporte</a></li>
+        
        </ul>
      </div>
    </div>
@@ -114,7 +95,7 @@ border-radius: 20px;
    </div>
  </div>
 
- <div style="width:200vh; height:auto; margin-left:100px;">
+<div class="box">
    <header>Chat</header>
    <div class="chat-container">
      <div class="mensagens">
@@ -139,15 +120,15 @@ border-radius: 20px;
            }
 
            echo '<div class="'.$classe.'">
-                   '.$foto.'
-                   <div class="conteudo">
+                   '.$foto.'<div class="conteudo">
                      <span class="nome">'.$msg['nome'].'</span>
                      <p>'.$msg['mensagem'].'</p>';
 
+           // Respostas
            $sqlResp = "SELECT r.id, r.id_usuario, r.mensagem, u.nome, u.imagens
                        FROM chat_mensagens r
                        JOIN usuarios u ON r.id_usuario = u.id_usuario
-                       WHERE r.comentario_id = ".$msg['id']."
+                       WHERE r.comentario_id = ".$msg['id']." 
                        ORDER BY r.data_envio ASC";
            $respostas = $conn->query($sqlResp);
 
@@ -163,6 +144,7 @@ border-radius: 20px;
                    </div>';
            }
 
+           // Formulário para resposta
            echo '<form class="resposta-form" method="post" action="../phpFuncions/responder.php">
                    <input type="hidden" name="comentario_id" value="'.$msg['id'].'">
                    <textarea name="mensagem" placeholder="Responder este comentário..." required></textarea>
@@ -178,12 +160,12 @@ border-radius: 20px;
      </div>
    </div>
 
+   <!-- Formulário de envio de mensagens -->
    <form class="chat-input" method="post" action="../phpFuncions/enviar.php">
      <input type="text" name="mensagem" placeholder="Digite sua mensagem..." required>
-     <button type="submit" style="width: 80px;
-height: 40px;">Enviar</button>
+     <button type="submit">Enviar</button>
    </form>
- </div>
+</div>
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

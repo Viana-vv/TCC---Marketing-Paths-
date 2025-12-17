@@ -25,80 +25,12 @@ $uso = $stmt->get_result();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Fornecedores - Marketing paths </title>
-      <link rel="stylesheet" href="../CSS/home.css">
+      <link rel="stylesheet" href="../CSS/fornecedores.css">
     <link rel="icon" href="../img/icone.png">
          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<style>
-  .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 20px 40px;
-}
 
-.card {
-  
-     background: linear-gradient(to right, #000000, #423353ff);
-  border-radius: 10px;
-  padding: 20px;
-  color: white;
-  border: 1px solid #333;
-  transition: 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  border-color: #ffffffff;
-}
-
-.card h3 {
-  margin: 0 0 10px 0;
-  color: white;
-  font-weight: 600;
-}
-
-.card a {
-  color: #4da3ff;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.card a:hover {
-  text-decoration: underline;
-}
-
-.btn{
-  margin-bottom: 5px;
-    width: 350px;
-    height: 50px;
- font-size: large;
-    border-radius: 20px;
-    cursor: pointer;
-    background-color: #5a3f91ff;
-    color:rgb(255, 255, 255);
-}
-
-.btn:hover{
-    background-color: #dce2b3;
-    color: #2b2341ff;
-}
-
-i{
-
-  color: #c3b3e2ff;
-  transform: translateX(0px);
- 
-}
-button{
-  background-color: #8d1bffff;
-  color: #ffffffff;
-width: 80px;
-height: 30px;
-border-radius: 20px;
-}
-</style>
 
 <body>
   <div class="navBar">
@@ -161,10 +93,9 @@ value="<?php echo isset($_GET['pesquisar']) ? htmlspecialchars($_GET['  $row[tit
                 
             <li><a href="perfil.php"><i class="bi bi-person-circle"></i> Meu Perfil</a></li>
                 <li><a href="../telas/duvidas.html"> <i class="bi bi-person-raised-hand"></i> Duvidas??</a></li>
-                <li><a href="apresentação.html"> <i class="bi bi-people-fill"></i> Sobre nós</a></li>
-                <li><a href="Suporte.html"> <i class="bi bi-chat-left-dots"></i> Suporte</a></li>
-            <li><a href="" style="font-size: x-small;"> <i class="bi bi-book-half"></i> Termos de politica de privacidade</a></li>
-         </ul>
+                <li><a href="../telas/apresentacao.html"> <i class="bi bi-people-fill"></i> Sobre nós</a></li>
+          <li><a href="https://wa.me/5511945931935"> <i class="bi bi-chat-left-dots"></i> Suporte</a></li>
+           </ul>
         </div>
     </label>
     </div>

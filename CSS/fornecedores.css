@@ -310,13 +310,32 @@ border-radius: 10px;
 }
 
 
-@media(max-width:900px){
-   
+@media(max-width:1200px){
+    a.areaCursos, a.tutorial {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  color: #ffffff !important;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 60vw;
+  min-width: 55vw;
+  height: auto;
+  margin-left: 5vw;
+  
+}
 .pesq{
-  background-color: #ebdbff;
+  background-color: #cfbeff;
   color: black;
   font-size: medium;
 border-radius: 10px;
+    width: 100%;
+    max-width:180px ;
+    min-width: 5px;
+    height: 100%;
+    min-height: 10px;
+    max-height: 40px;
+    box-sizing: border-box;
 } 
 
 .btn{
@@ -335,7 +354,22 @@ border-radius: 10px;
     background-color: #beb3e2;
     color: #234124;
 }
+.left-guide{
+
+    background-color: rgb(47, 45, 45); width: 15vw !important; height: 100vh;
+    position: fixed;
+    display: flex; align-items: center; justify-items: center; flex-direction: column;justify-content: space-evenly;
+border: #c7b3e2 solid 1px;
+top: 0;
 }
+  .grid-container {
+    grid-template-columns: 1fr !important; /* Faz os itens ficarem em uma coluna */
+    padding: 10px;
+  }
+}
+
+
+
 .card{
    box-shadow:20px 20px 20px #000000;
 }
@@ -361,26 +395,28 @@ border-radius: 10px;
 
 .left-guide{
 
-    background-color: rgb(47, 45, 45); width: 100px; height: 100vh;
+    background-color: rgb(47, 45, 45); width: 5vw; height: 100vh;
     position: fixed;
     display: flex; align-items: center; justify-items: center; flex-direction: column;justify-content: space-evenly;
 border: #c7b3e2 solid 1px;
 top: 0;
 }
 .left-guide-container{
-    border-radius: 30px; width: 50px; height: 50px;
+    border-radius: 50%; width: auto; height: auto;
        display: flex; align-items: center; justify-content: center;
        border: #c7b3e2 solid 1px;
+       padding: 10px;
+       font-size: 2vw;
 }
 .center-container{
     background-color:rgb(0, 0, 0); width:180vh; height:100vh;
     margin-top: 100px;
-    margin-left: 80px;
+    margin-left: 5vw;
 }
 .areaCursos{
       margin-top: 20px;
     width: auto;
-    height: 100px;
+    height: auto;
    background: linear-gradient(to right, #000000, #512585);
     margin-bottom: 20px;
     margin: 20px;
@@ -401,13 +437,13 @@ top: 0;
 
 h1 {
     margin: 5px;
-    font-size: medium;
+    font-size: 1.5vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 p {
-    text-indent: 10px;
+    text-indent: 1vw;
     margin: 10px;
-    font-size: small;
+    font-size: 1vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .tutorial {
@@ -422,16 +458,16 @@ p {
 }
 
 .tutorial h1 {
-  font-size: 22px;
+  font-size: 1.5vw;
   margin-bottom: 10px;
   color: #ffffff;
 }
 
 .tutorial p {
     color: #ffffff;
-text-indent: 10px;
+text-indent: 1vw;
     margin: 10px;
-    font-size: small;
+    font-size: 1vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 a.areaCursos, a.tutorial {
@@ -439,178 +475,72 @@ a.areaCursos, a.tutorial {
   color: inherit;
   display: block;
   color: #ffffff !important;
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Colunas para desktop */
+  gap: 20px;
+  padding: 20px 40px;
 }
 
-
-.chat-container {
-  width: 100%;
-  max-width: 1500px;
-height: 100%;
-max-height: 100vh;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.mensagens {
-  flex: 1;
-  padding: 10px;
-  background-color: #2b2341; /* fundo escuro */
+.card {
+  
+     background: linear-gradient(to right, #000000, #423353ff);
   border-radius: 10px;
-  overflow-y: auto;
-  max-height: 400px;
-}
-
-.mensagem {
-  display: flex;
-  align-items: flex-start;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  max-width: 60%;
-  background-color: #3a2f5a;
-}
-
-.mensagem.esquerda {
-  justify-content: flex-start;
-}
-
-.mensagem.direita {
-  justify-content: flex-end;
-  margin-left: auto;
-  background-color: #5a3f91;
-}
-
-.foto {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.conteudo {
-  display: flex;
-  flex-direction: column;
-}
-
-.nome {
-  font-weight: bold;
-  font-size: 14px;
-  margin-bottom: 5px;
-  color: white; /* nomes em branco */
-}
-
-.conteudo p {
-  margin: 0;
-  color: #f0f0f0; /* texto claro */
-}
-
-.chat-input {
-  display: flex;
-  margin-top: 10px;
-}
-
-.chat-input input {
-  flex: 1;
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-}
-
-.chat-input button {
-  padding: 10px 20px;
-  margin-left: 5px;
-  border-radius: 8px;
-  border: none;
-  background-color: #5a3f91;
+  padding: 20px;
   color: white;
-  cursor: pointer;
+  border: 1px solid #333;
+  transition: 0.2s;
 }
-    .resposta {
-      display: flex;
-      align-items: center;
-      margin-left: 60px;
-      margin-top: 5px;
-      padding: 8px;
-      border-left: 2px solid #ccc;
-    }
-    .resposta .foto { margin-right: 8px; }
-    .resposta .nome { font-weight: bold; color: white; margin-right: 10px; }
-    .resposta p { margin: 0; color: #f0f0f0; }
-  button{
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #ffffffff;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  color: white;
+  font-weight: 600;
+}
+
+.card a {
+  color: #4da3ff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.btn{
+  margin-bottom: 5px;
+    width: 350px;
+    height: 50px;
+ font-size: large;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #5a3f91ff;
+    color:rgb(255, 255, 255);
+}
+
+.btn:hover{
+    background-color: #dce2b3;
+    color: #2b2341ff;
+}
+
+i{
+
+  color: #c3b3e2ff;
+  transform: translateX(0px);
+ 
+}
+button{
   background-color: #8d1bffff;
   color: #ffffffff;
 width: 80px;
 height: 30px;
 border-radius: 20px;
-
-}
-
-/* ============================= */
-/* ===== CHAT - MOBILE ONLY ==== */
-/* ============================= */
-
-@media (max-width: 768px) {
-
-  .chat-container{
-    width: 100%;
-    height: calc(100vh - 100px);
-    margin: 0;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mensagens{
-    flex: 1;
-    max-height: none;
-    overflow-y: auto;
-    padding: 8px;
-  }
-
-  .mensagem{
-    max-width: 85%;
-    margin: 6px 0;
-    padding: 8px;
-    font-size: 14px;
-  }
-
-  .mensagem.direita{
-    margin-left: auto;
-  }
-   .mensagem.esquerda{
-  margin-left: 40px;
-}
-
-  .foto{
-    width: 32px;
-    height: 32px;
-  }
-
-  .nome{
-    font-size: 12px;
-  }
-
-  .resposta{
-    margin-left: 40px;
-    padding: 6px;
-    font-size: 13px;
-  }
-
-  .chat-input{
-    margin-top: 6px;
-    gap: 6px;
-  }
-
-  .chat-input input{
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  .chat-input button{
-    font-size: 13px;
-    padding: 6px 10px;
-  }
-
 }

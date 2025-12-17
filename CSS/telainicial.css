@@ -82,6 +82,7 @@ img {
     width: 50px;
     height: 50px;
     border: 3px solid blueviolet;
+
 }
 
 .container {
@@ -130,6 +131,9 @@ h1 {
     background-image: url('../img/inicial.avif');
     filter: grayscale(100);
     z-index: 0;
+     background-repeat: no-repeat;   /* impede repetição */
+  background-size: contain;       /* ajusta dentro da caixa */
+  background-position: center;    /* centraliza */
 }
 
 button {
@@ -204,4 +208,161 @@ h2{
     color: #ffffff;
     transform: translateY(-10px);
       margin-right: 5vw;
+}
+/* ===== AJUSTES SOMENTE PARA CELULAR ===== */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  header {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .dentro-header {
+    width: 100%;
+    height: auto;
+  }
+
+  .localIMG {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 5px;
+    height: auto;
+  }
+
+  li {
+    width: 90%;
+    height: auto;
+  }
+
+  /* CONTAINER PRINCIPAL */
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .container1 {
+    width: 90vw;
+    height: auto;
+    text-align: center;
+  }
+
+  .container2 {
+    width: 90vw;
+    height: 30vh;
+    margin-top: 20px;
+    background-size: contain;
+  }
+
+  /* BOTÕES */
+  .localButton {
+    margin-left: 0;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  /* CENTRO / CARDS */
+  .centro {
+    margin-top: 30px;
+  }
+
+  .dentroCentroTxt {
+    width: 90%;
+    transform: none;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  h2 {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  /* ÍCONES */
+  .bi-question-circle,
+  .bi-coin,
+  .bi-instagram {
+    font-size: 70px;
+  }
+}
+/* ===== CORREÇÃO PARA TELAS MUITO GRANDES (>= 3000px) ===== */
+@media (min-width: 3000px) {
+
+  /* REMOVE SOBREPOSIÇÃO */
+  .dentroCentroTxt {
+    transform: none;
+    margin-top: 30px;
+    width: 75%;
+  }
+
+  h2 {
+    transform: none;
+    margin-top: 20px;
+  }
+
+  /* AUMENTA LEGIBILIDADE DOS TEXTOS */
+  p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  /* ORGANIZA MELHOR OS BLOCOS */
+  .separacaoCentro {
+    margin-bottom: 80px;
+  }
+
+  /* ÍCONES PROPORCIONAIS */
+  .bi-question-circle,
+  .bi-coin,
+  .bi-instagram {
+    font-size: 160px;
+    margin-bottom: 20px;
+  }
+}
+/* ===== AUMENTO FORTE DE TEXTO PARA TELAS MUITO GRANDES ===== */
+@media (min-width: 3000px) {
+
+  /* TEXTO CORRIDO */
+  p,
+  .dentroCentroTxt {
+    font-size: 2.2rem;   /* bem maior */
+    line-height: 2;
+  }
+
+  /* TÍTULOS DAS PERGUNTAS */
+  h2 {
+    font-size: 3rem;
+    line-height: 1.4;
+  }
+
+  /* TÍTULO PRINCIPAL */
+  h1 {
+    font-size: 4.5rem;
+    line-height: 1.2;
+  }
+
+  /* MENU */
+  li a {
+    font-size: 2rem;
+  }
+
+  /* BOTÕES */
+  .Btnentrar,
+  .BtnCadastrar {
+    font-size: 2rem;
+    padding: 18px 0;
+    width: 220px;
+  }
 }

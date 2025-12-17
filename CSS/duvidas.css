@@ -86,4 +86,44 @@ button:hover {
 a {
     text-decoration: none;
     color: aliceblue;
+}/* ===== AJUSTE EQUILIBRADO PARA TELAS 3K / 4K ===== */
+@media (min-width: 3000px) {
+
+  header {
+    font-size: 2.6rem;
+    height: 16vh;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+
+  .texto {
+    border-left-width: 24px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 20px;
+  }
+
+  button {
+    width: 16vw;
+    height: 7vh;
+    font-size: 1.4rem;
+    border-radius: 16px;
+  }
+
+  button:hover {
+    width: 16vw;
+    height: 7vh;
+    font-size: 1.4rem;
+  }
+
+  a {
+    font-size: 1.4rem;
+  }
 }

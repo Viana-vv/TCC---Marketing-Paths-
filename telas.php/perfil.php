@@ -105,12 +105,12 @@ $result = $stmt->get_result();
 
                                 echo '<li><button type="submit" class="btn btn-success">Editar</button></li>';
                                 echo '</form>';
-
-                                echo '<li><form action="sairbtnperfil.php" method="post">';
-                                echo '<button type="submit" class="btn btn-danger">Sair</button>';
-                                echo '</form></li>';
-                                echo '</ul>';
-                            } else {
+?>
+<li>
+                              <button type="submit" class="btn btn-danger"  onclick="window.history.go(-1)">Sair</button>
+                              </li>
+                              </ul>
+<?php                            } else {
                                 echo '<input type="text" id="disabledTextInput" class="form-control" placeholder="Não encontrado">';
                                 echo '<div class="container text-center"><div class="row align-items-center"><div class="col-md-4">';
                                 echo '<a href="login.html">Login</a>';

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form id="formlogin" method="post" action="../phpFuncions/">
+ <form id="formlogin" method="post" action="../phpFuncions/enviar_video.php" enctype="multipart/form-data">
         <header><img src="../img/icone-inteiro.png"></header>
         <div class="Caixa">
             <h1>Enviar video</h1>
@@ -24,6 +24,7 @@
                     <li>
                         <p><b>Categoria: </b></p>
                         <select name="categoria" id="categoria">
+                            <option value="Tutorial">Tutorial</option>
                             <option value="estrategia-marketing">Estratégia de marketing</option>
                             <option value="comunicacao-conteudo">Comunicação e conteúdo</option>
                             <option value="empreendedorismo-negocios">Empreendedorismo e negócios</option>
