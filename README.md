@@ -35,5 +35,4 @@ Facilitar o controle e a organização de ações de marketing, permitindo que u
 ## 🚀 Status do projeto
 ✔️ Concluído (Projeto acadêmico)
 
-## 👨‍💻 Autor
-Projeto desenvolvido por **Viana** como parte de estudos em desenvolvimento web.
+
