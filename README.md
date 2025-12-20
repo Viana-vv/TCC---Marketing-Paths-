@@ -22,7 +22,6 @@ Facilitar o controle e a organização de ações de marketing, permitindo que u
 - **PHPMyAdmin**
 - **HTML5**
 - **CSS3**
-- **JavaScript**
 
 ## 🧠 Conceitos aplicados
 - Desenvolvimento **backend e frontend**
