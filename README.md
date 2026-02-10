@@ -14,7 +14,7 @@ Facilitar o controle e a organização de ações de marketing, permitindo que u
 - Interface dinâmica com uso de JavaScript
 - Sistema responsivo para diferentes dispositivos
 
-> ⚠️ Algumas páginas e conteúdos não estão disponíveis publicamente por não haver autorização para exibição de materiais (como vídeos) utilizados no projeto.
+> ⚠️ Algumas páginas e conteúdos não estão disponíveis publicamente por não haver autorização para exibição de materiais (como vídeos, pdfs ou imagens dos membros do grupo) utilizados no projeto.
 
 ## 🛠️ Tecnologias utilizadas
 - **PHP**
@@ -32,6 +32,6 @@ Facilitar o controle e a organização de ações de marketing, permitindo que u
 - Responsividade e usabilidade
 
 ## 🚀 Status do projeto
-✔️ Concluído (Projeto acadêmico)
+✔️ Concluído (E.E Barão de Ramalho)
 
 
