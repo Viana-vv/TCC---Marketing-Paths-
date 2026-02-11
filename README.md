@@ -33,5 +33,9 @@ Facilitar o controle e a organização de ações de marketing, permitindo que u
 
 ## 🚀 Status do projeto
 ✔️ Concluído (E.E Barão de Ramalho)
+<br>
+## Mapa Mental do projeto
 
+
+<img width="830" height="776" alt="Mapa mental do projeto" src="https://github.com/user-attachments/assets/92cfb119-12a4-48fc-a3bc-145c8a12c03d" />
 
